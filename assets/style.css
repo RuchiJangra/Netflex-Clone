@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+}
+
+.main{
+
+    background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/ca6a7616-0acb-4bc5-be25-c4deef0419a7/c5af601a-6657-4531-8f82-22e629a3795e/IN-en-20231211-popsignuptwoweeks-perspective_alpha_website_medium.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 90vh;
+    position: relative;
+
+}
+
+.main .box{
+    height: 80vh;
+    width: 100%;
+    opacity: 0.50;
+    background-color: black;
+    position: absolute;
+    top:0;
+}
+
+nav{
+    display: flex;
+    max-width: 80vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+}
+
+nav img{
+    width: 120px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button{
+    position: relative;
+    z-index: 10;
+}
+
+.hero{
+
+    color:white;
+    height: calc(100% - 62px); /*deduct navbar 62 height from hero's height*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Martel Sans', sans-serif;
+    gap:23px;
+    padding: 0px 30px;
+    
+}
+
+.hero> :first-child{
+    font-weight: 900;
+    font-size: 38px;
+    text-align: center;
+}
+
+.hero>  :nth-child(2){
+    font-size:24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.hero> :nth-child(3){
+    font-size: 20px;
+    font-weight:400 ;
+    text-align: center;
+}
+
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.separation{
+    height: 11px;
+    background-color: rgba(49, 48, 48, 0.788);
+}
+
+.btn{
+    padding: 3px 8px;
+    font-weight:bold;
+    border : none;
+    color: white;
+    background-color: rgba(68, 66, 66, 78%);
+    
+    
+}
+
+.btn-red{
+    background-color: red;
+    color: white;
+    padding: 3px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    font-weight: 300;
+}
+
+.btn-red-sm{
+    background-color: red;
+    color: white;
+    border-radius: 4px;
+
+
+}
+.main input{
+    padding: 7px 101px 8px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 4px;
+    color:white;
+    background-color:rgba(23,23,23,0.7);
+    border: 1px solid rgba(241, 234, 234, 0.5);
+}
+
+.first{
+    display: flex;
+    color: white;
+    justify-content: center;
+    max-width: 70vw;
+    margin: auto;
+    align-items: center;
+}
+.secImg{
+    position: relative;
+}
+.secImg img{
+    max-width: 30vw;
+    width: 100%;
+    display: block;
+    position: relative;
+    z-index: 10;
+}
+.secImg video{
+    position: absolute;
+    max-width: 100%;
+    top: 47px;
+    right: 60px;
+    width: 75%;
+    z-index: -1;
+}
+section.first >div{
+    display: flex;
+    flex-direction: column;
+
+}
+section.first > div :nth-child(1){
+    font-size: 48px;
+    font-weight: bold;
+    
+}
+
+section.first > div :nth-child(2){
+    font-size: 24px;
+}
